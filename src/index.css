@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+  --color-bg: #040C18;
+  --color-footer: #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
+* {
+  appearance: none;
+  outline: none;
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  border: none;
+  transition: all 300ms ease;
+  border: none;
+
+}
+
+body {
+  background-color: var(--color-bg);
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+.gradient__bg {
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(circle at 3% 25%, #002853 1%, #040C18 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(circle at 3% 25%, #002853 1%, #040C18 100%);
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 3% 25%, #002853 1%, #040C18 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 3% 25%, #002853 1%, #040C18 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 25%, #002853 1%, #040C18 100%);
+
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.section__padding {
+  padding: 4rem 5rem;
+}
+
+.section__margin {
+  margin: 4rem 5rem;
+}
+
+span.tick {
+  display: inline-block;
+  background: var(--gradient-text);
+  height: 4px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:700px) {
+
+  .section__padding {
+    padding: 3rem;
+  }
+
+  .section__margin {
+    margin: 3rem;
+  }
+
+
+}
+
+@media screen and (max-width:550px) {
+
+  .section__padding {
+    padding: 2rem 1rem;
+  }
+
+  .section__margin {
+    margin: 2rem 1rem;
+  }
+
+
+}

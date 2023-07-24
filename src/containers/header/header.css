@@ -1,0 +1,136 @@
+.gpt3__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.gpt3__header-content {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.gpt3__header-content h1 {
+    font-size: 60px;
+}
+
+.gpt3__header-content p {
+    color: var(--color-text);
+}
+
+.gpt3__header-content__input,
+.gpt3__header-content__people {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.gpt3__header-content__input input {
+    border-radius: 5px 0 0 5px;
+    background-color: var(--color-blog);
+}
+
+.gpt3__header-content__input input,
+.gpt3__header-content__input button {
+    padding: 1rem 2rem;
+}
+
+.gpt3__header-content__input button {
+    width: 200px;
+    display: block;
+    border-radius: 0 5px 5px 0;
+    background-color: #FF4820;
+    color: #fff;
+    font-weight: 500;
+}
+
+.gpt3__header-content__people {
+    column-gap: 10px;
+}
+
+.gpt3__header-content__people p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.gpt3__header-image {
+    width: 550px;
+    object-fit: contain;
+
+}
+
+
+@media screen and (max-width: 1350px) {
+    .gpt3__header-content {
+        flex-basis: 50%;
+    }
+
+    .gpt3__header-content h1 {
+        font-size: 45px;
+    }
+
+    .gpt3__header-image {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .gpt3__header-content {
+        flex-basis: 70%;
+        margin: auto;
+    }
+
+    .gpt3__header-content h1 {
+        font-size: 45px;
+    }
+
+    .gpt3__header-content__input input {
+        flex-basis: 50%;
+    }
+
+    .gpt3__header-content__input input,
+    .gpt3__header-content__input button {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .gpt3__header-image {
+        width: min(450px, 90%);
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__header-content {
+        flex-basis: 80%;
+    }
+
+    .gpt3__header-content__input {
+        flex-flow: column nowrap;
+        row-gap: 10px;
+        align-items: start;
+    }
+
+    .gpt3__header-content__input input,
+    .gpt3__header-content__input button {
+        width: min(200px, 90%);
+        border-radius: 5px;
+    }
+
+    .gpt3__header-image {
+        width: min(450px, 100%);
+    }
+
+    .gpt3__header-content__people {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__header-content {
+        flex-basis: 90%;
+    }
+
+    .gpt3__header {
+        flex-flow: column-reverse;
+    }
+}

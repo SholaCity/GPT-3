@@ -1,0 +1,119 @@
+.gpt3__features {
+    width: min(1280px, 90%);
+    display: flex;
+    margin: 8rem auto;
+    justify-content: space-between;
+}
+
+.gpt3__features-head {
+    width: 460px;
+}
+
+.gpt3__features-head h2 {
+    font-size: 38px;
+    line-height: 50px;
+}
+
+.gpt3__features-head a {
+    color: var(--color-subtext);
+    font-size: 17px;
+}
+
+.gpt3__features-container {
+    width: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.gpt3__features-container_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gpt3__features-container_items-title {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gpt3__features-container_items h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.gpt3__features-container_items p {
+    color: var(--color-text);
+    width: 60%;
+    font-size: 18px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1350px) {
+    .gpt3__features-container {
+        width: 550px;
+    }
+
+    .gpt3__features-head {
+        width: 425px;
+    }
+
+    .gpt3__features-head h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .gpt3__features-container_items {
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .gpt3__features {
+        width: min(900px, 90%);
+        flex-direction: column;
+        row-gap: 70px;
+    }
+
+    .gpt3__features-container {
+        width: min(800px, 90%);
+    }
+
+    .gpt3__features-head {
+        width: min(700px, 90%);
+    }
+
+    .gpt3__features-head h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .gpt3__features-container_items {
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__features-container {
+        width: 100%;
+        flex-flow: row nowrap;
+        column-gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .gpt3__features-container_items {
+        flex-flow: column nowrap;
+        max-width: 430px;
+        scroll-snap-align: start;
+    }
+
+    .gpt3__features-container_items p {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {}

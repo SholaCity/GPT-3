@@ -1,0 +1,26 @@
+.gpt3__brands {
+    width: min(1200px, 90%);
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-inline: auto;
+    padding: 3rem 0;
+
+}
+
+.gpt3__brands--icons {
+    padding: 0.3rem;
+}
+
+@media screen and (max-width: 900px) {
+    .gpt3__brands {
+        flex-wrap: wrap;
+        column-gap: 10px;
+
+    }
+
+    .gpt3__brands--icons {
+        padding: 0.7rem;
+        margin: 5px;
+    }
+}
